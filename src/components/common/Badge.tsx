@@ -6,12 +6,12 @@ const Badge: React.FC<BadgeProps> = ({
   variant, 
   className = '' 
 }) => {
-  const baseClasses = 'px-2 py-1 rounded-lg text-sm font-medium';
+  const baseClasses = 'px-1.5 py-0.5 rounded-md text-xs font-medium md:px-2 md:py-1 md:text-sm md:rounded-lg';
   
   const variantClasses = {
     popular: 'text-black font-semibold',
     price: 'text-black font-semibold', 
-    status: 'text-sm'
+    status: 'text-xs md:text-sm'
   };
   
   const variantStyles = {

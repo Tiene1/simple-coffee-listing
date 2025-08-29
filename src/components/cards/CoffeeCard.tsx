@@ -22,7 +22,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
       className={`rounded-xl overflow-hidden hover:scale-105 transition-transform duration-200 ${className}`}
       style={{ 
         backgroundColor: colors.bgCard,
-        border: `1px solid ${colors.cardBorder}`
+        border: `0px solid ${colors.cardBorder}`
       }}
     >
       {/* Image Container */}
@@ -32,21 +32,21 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
           alt={name}
           width={400}
           height={160}
-          className="w-full h-40 object-cover rounded-xl"
+          className="w-full h-40 lg:h-32 object-cover rounded-xl"
         />
         {popular && (
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 lg:top-2 lg:left-2">
             <Badge variant="popular">Popular</Badge>
           </div>
         )}
       </div>
 
       {/* Content */}
-      <div className="p-4">
+      <div className="p-4 lg:p-3">
         {/* Header with name and price */}
-        <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center justify-between mb-2 lg:mb-1">
           <h3 
-            className="font-semibold text-lg truncate"
+            className="font-semibold text-lg lg:text-base truncate"
             style={{ color: colors.textPrimary }}
           >
             {name}

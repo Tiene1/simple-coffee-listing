@@ -73,21 +73,23 @@ export default function Home() {
   }
 
   return (
-    <div className="w-[95%] md:w-[85%] lg:w-[75%] xl:w-[65%] container mx-auto px-4 md:px-6 py-6 md:py-8 max-w-6xl flex flex-col rounded-2xl"
+    <div className="w-[85%] md:w-[85%] lg:w-full xl:w-full lg:h-full xl:h-full container mx-auto px-6 md:px-6 lg:px-5 xl:px-6 py-6 md:py-8 lg:py-5 xl:py-4 max-w-6xl lg:max-w-none xl:max-w-none flex flex-col rounded-2xl lg:overflow-hidden xl:overflow-hidden"
     style={{ 
         backgroundColor: colors.bgCard,
       }}>
-      <div className="flex-none">
+      <div className="flex-none lg:flex-1 lg:flex lg:flex-col lg:min-h-0 xl:flex-1 xl:flex xl:flex-col xl:min-h-0">
         <Header 
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
         />
         
-        <CoffeeGrid coffees={filteredCoffees} />
+        <div className="lg:flex-1 lg:min-h-0 xl:flex-1 xl:min-h-0">
+          <CoffeeGrid coffees={filteredCoffees} />
+        </div>
       </div>
 
       {/* Footer */}
-      <div className="text-center pt-5">
+      <div className="text-center pt-5 lg:pt-3 xl:pt-2 lg:flex-none xl:flex-none">
         <div className="text-sm text-gray-400">
           Coded by{' '}
           <a href="#" className="hover:text-white transition-colors">

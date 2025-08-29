@@ -34,7 +34,9 @@ export default function RootLayout({
           
           {/* Content des pages */}
           <div className="relative z-10 pt-8 pb-8 min-h-screen flex items-center justify-center">
-            {children}
+            <div className="w-full h-auto lg:w-[65vw] lg:h-[75vh] lg:flex lg:items-center lg:justify-center xl:w-[55vw] xl:h-[80vh] xl:flex xl:items-center xl:justify-center">
+              {children}
+            </div>
           </div>
         </div>
       </body>

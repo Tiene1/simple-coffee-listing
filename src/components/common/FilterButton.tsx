@@ -6,7 +6,7 @@ const FilterButton: React.FC<FilterButtonProps> = ({
   onClick,
   children
 }) => {
-  const baseClasses = 'px-3 sm:px-4 py-2 rounded-lg font-medium text-sm sm:text-base transition-all duration-200';
+  const baseClasses = 'px-3 sm:px-4 lg:px-3 xl:px-2 py-2 lg:py-1.5 xl:py-1 rounded-lg font-medium text-sm sm:text-base lg:text-sm xl:text-xs transition-all duration-200';
   
   return (
     <button 

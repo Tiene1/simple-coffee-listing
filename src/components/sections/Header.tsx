@@ -7,10 +7,10 @@ const Header: React.FC<HeaderProps> = ({
   onFilterChange
 }) => {
   return (
-    <div className="text-center ">
+    <div className="text-center lg:flex-none xl:flex-none">
       {/* Title */}
       <h1 
-        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+        className="text-4xl sm:text-4xl md:text-5xl lg:text-3xl xl:text-4xl font-bold mb-4 lg:mb-2 xl:mb-1"
         style={{ color: colors.textPrimary }}
       >
         Our Collection
@@ -18,14 +18,14 @@ const Header: React.FC<HeaderProps> = ({
       
       {/* Description */}
       <p 
-        className="text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-6 md:mb-8 leading-relaxed px-2"
+        className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-sm max-w-xl lg:max-w-lg xl:max-w-md mx-auto mb-6 md:mb-8 lg:mb-4 xl:mb-5 lg:leading-relaxed xl:leading-tight px-2"
         style={{ color: colors.textSecondary }}
       >
         Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.
       </p>
       
       {/* Filter Buttons */}
-      <div className="flex gap-3 sm:gap-4 justify-center mb-4 md:mb-5 flex-wrap">
+      <div className="flex gap-3 sm:gap-4 lg:gap-3 xl:gap-2 justify-center mb-4 md:mb-5 lg:mb-3 xl:mb-2 flex-wrap">
         <FilterButton
           active={activeFilter === 'all'}
           onClick={() => onFilterChange('all')}
