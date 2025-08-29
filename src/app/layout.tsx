@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen relative">
+        <div className="min-h-screen relative overflow-hidden">
           {/* Section image de fond - 25% hauteur */}
           <div 
             className="w-full h-1/4 absolute top-0"
