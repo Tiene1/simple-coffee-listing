@@ -15,9 +15,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="min-h-screen relative">
-          {/* Section image de fond - 25% hauteur */}
+          {/* Section image de fond - 25% hauteur viewport */}
           <div 
-            className="w-full h-1/4 absolute top-0"
+            className="w-full h-[25vh] absolute top-0"
             style={{
               backgroundImage: 'url(/assets/icons/bg-cafe.jpg)',
               backgroundSize: 'cover',
@@ -28,12 +28,12 @@ export default function RootLayout({
           
           {/* Section couleur unie - 75% hauteur restante */}
           <div 
-            className="w-full h-3/4 absolute bottom-0"
+            className="w-full absolute top-[25vh] bottom-0"
             style={{ backgroundColor: 'black' }}
           />
           
           {/* Content des pages */}
-          <div className="relative z-10 min-h-screen flex items-center justify-center">
+          <div className="relative z-10 pt-8 pb-8 min-h-screen flex items-center justify-center">
             {children}
           </div>
         </div>
