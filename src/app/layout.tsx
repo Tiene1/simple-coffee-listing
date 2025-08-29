@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "simple coffee listing",
-  description: "Dev Training with devchallenges.io",
+  title: "Simple Coffee Listing | devChallenges.io",
+  description: "A beautiful coffee collection showcase built with Next.js, TypeScript, and Tailwind CSS. Challenge by devChallenges.io",
 };
 
 export default function RootLayout({
